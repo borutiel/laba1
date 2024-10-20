@@ -7,7 +7,7 @@
 #include <cstdio>
 #include <cstring>
 
-void processString(char str[]) {
+void mainFunk(char str[]) {
     int length = std::strlen(str);
     int writeIndex = 0;
     bool hasRepetitions = false;
@@ -47,7 +47,7 @@ int funk1() {
         ++length;
     }
 
-    processString(inputString);
+    mainFunk(inputString);
 
     std::cout << "Processed string: " << inputString << std::endl;
 
@@ -66,7 +66,7 @@ int funk2() {
         ++length;
     }
 
-    processString(inputString);
+    mainFunk(inputString);
 
     std::cout << "Processed string: " << inputString << std::endl;
 
@@ -101,7 +101,7 @@ int funk3() {
     }
 
     
-    processString(inputString);
+    mainFunk(inputString);
 
 
     FILE* outputFile = fopen(outputFileName, "w");
